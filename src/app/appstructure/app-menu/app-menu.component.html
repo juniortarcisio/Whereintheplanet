@@ -2,9 +2,9 @@
     <article>
         <i class="closebtn" onclick="toggleNav()">&times;</i>
         <i class="fa fa-user-circle usericon" aria-hidden="true"></i>
-        <h1 ng-show="connectedServer!=null">{{username}}</h1>
+        <h1 ng-show="connectedServer!=null">username</h1>
         <h1 ng-hide="connectedServer!=null">Disconnected</h1>
-        <a class="edit-username" ng-show="connectedServer!=null">{{connectedServer?.Name}}</a>
+        <a class="edit-username" ng-show="connectedServer!=null">connectedServer?.Name</a>
         <hr />
         <section class="items">
             <a href="#"><i class="fa fa-home"></i>Home</a>
