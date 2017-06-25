@@ -5,7 +5,6 @@
     padding-bottom:30px;
     margin-top:10px;
     box-shadow: 0px -2px 3px #333;
-    margin-left:250px;
 }
 
 
@@ -29,26 +28,36 @@
     text-decoration:none;
 }
 
+.footer-page ul li a:hover {
+    text-decoration:underline;
+}
+
 .footer-tark-css {
     position: fixed;
     bottom: 0;
     background-color: #222;
-    color:#ccc;
     width: 100%;
     padding: 8px 20px 5px 20px;
     box-shadow: 1px 1px 4px;
-    margin-left:250px;
     box-shadow: 0px -2px 6px #333;
     opacity:0.9;
     font-family: Segoe UI;
     font-size: 0.9em;
+}
+
+.footer-tark-css span { 
     animation: shadowBright 2s infinite alternate;
 }
 
-
-@media only screen and (max-width: 1300px) {
-   .footer-tark-css, .footer-page
-    {
-        margin-left:0px;
+@keyframes shadowBright {
+    from {
+        color:#777;
+        text-shadow: 0px -1px 0px #000;
+        font-size: 0.95em;
+    }
+    to {
+        color:#fff;
+        text-shadow: 0px 1px 5px white;
+        font-size: 1.0em;
     }
 }
