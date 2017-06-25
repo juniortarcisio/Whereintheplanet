@@ -1,0 +1,25 @@
+<aside id="mySidenav" class="sidenav scrollbar-gray">
+    <article>
+        <i class="closebtn" onclick="toggleNav()">&times;</i>
+        <i class="fa fa-user-circle usericon" aria-hidden="true"></i>
+        <h1 ng-show="connectedServer!=null">{{username}}</h1>
+        <h1 ng-hide="connectedServer!=null">Disconnected</h1>
+        <a class="edit-username" ng-show="connectedServer!=null">{{connectedServer?.Name}}</a>
+        <hr />
+        <section class="items">
+            <a href="#"><i class="fa fa-home"></i>Home</a>
+            <a href="#"><i class="fa fa-plane"></i>Map</a>
+            <a href="#"><i class="fa fa-commenting"></i>Messages</a>
+            <a href="#"><i class="fa fa-cog"></i>Settings</a>
+            <a href="#"><i class="fa fa-code"></i>About</a>
+            <a href="#"><i class="fa fa-plug"></i>Disconnect</a>
+        </section>
+        <section class="social">
+            <a href="https://www.facebook.com/jrtarcisiowins" target="_blank" class="fa fa-round fa-facebook"></a>
+            <a href="https://twitter.com/mythosacrifice" target="_blank" class="fa fa-round fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/jr-tarcisio-587980138/" target="_blank" class="fa fa-round fa-linkedin"></a>
+            <a href="skype:tarcisiocorvo?call" class="fa fa-round fa-skype"></a>
+            <a href="https://github.com/juniortarcisio" target="_blank" class="fa fa-round fa-github"></a>
+        </section>
+    </article>
+</aside>

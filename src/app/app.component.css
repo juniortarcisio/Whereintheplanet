@@ -1,0 +1,34 @@
+main {
+    background-color:#020202;
+    background-image:url('../assets/worldnasahexa.jpg');
+    background-size:cover;
+    background-position-x: center;
+    color:#bbb;
+    min-height:80%;
+}
+
+main {
+    margin-left:250px;
+}
+
+main>section:first-of-type {
+    height:90%;
+}
+
+main>div:first-of-type>section:first-of-type {
+    margin-left:20px;
+}
+
+@media only screen and (max-width:599px) {
+    main>section {
+        margin-left:5px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+    main {
+        margin-left:0px;
+    }
+}

@@ -1,0 +1,107 @@
+.topheader span {
+    text-shadow:0px 0px 15px #aaffaa;
+}
+
+.topheader img {
+    box-shadow:0px 1px 6px #aaffaa;
+}
+
+.battery-bar {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.home-bar {
+    font-size:24px;
+}
+.topheader {    
+    background-color: #222;
+    padding: 8px 0px 0px 0px;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:24px;    
+    margin-left:250px;
+    transition: .5s;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #222;
+    box-shadow: 0 1px 6px 0 rgba(32,32,32,0.7);
+    font-family: Segoe UI, Arial;
+    margin-left:250px;
+    transition: .5s;
+    animation: topnavScroll .5s all;
+    padding-top:4px;
+}
+
+.topnav-scrolled {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    animation: topnavScroll .3s;
+    opacity:0.95;
+    padding-top:0px;
+}
+
+.topnav-scrolled a {
+        padding: 7px 16px !important;
+}
+
+.topnav-scrolled .battery-bar {    
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+@keyframes topnavScroll {
+    0% {
+        top:-39px;
+    }
+    100% {
+        top: -1px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .topnav,.topheader
+    {
+        margin-left:0px;
+    }
+}
+
+    .topnav button {
+        font-family: Segoe UI, Arial;
+        color:#CCC;
+    }
+
+    .topnav a {
+        float: left;
+        font-size: 16px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color:#CCC;
+    }
+
+        .topnav a:hover, .dropdown:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+            border-radius: 2px;
+        }
+
+        .topnav a.active {
+            background-color: #2C80AF;
+            color: white;
+        }
+
+.topnav-container {
+    position:relative;
+}
